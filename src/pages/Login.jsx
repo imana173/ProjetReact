@@ -19,7 +19,7 @@ function Login() {
         onSubmit={async (values) => {
           try {
             console.log('Tentative de connexion avec les valeurs :', values);
-            const response = await fetch('/auth/login', {
+            const response = await fetch('https://projetnodejs-u0it.onrender.com/auth/login', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
